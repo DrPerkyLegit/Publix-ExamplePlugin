@@ -6,7 +6,7 @@ using Publix_ExamplePlugin.EventListeners;
 
 namespace Publix_ExamplePlugin
 {
-    [PluginInfo("dev.drperky.exampleplugin", "Example Plugin", "0.1")]
+    [PluginInfo("dev.drperky.exampleplugin", "Example Plugin", "0.1", "0.0.0.2")]
     [PluginDescription("Example Plugin For PublixExtension")] //Description isnt used at the time of writing this, so its optional
     public class ExamplePlugin : BasePlugin
     {
