@@ -19,13 +19,13 @@ namespace Publix_ExamplePlugin.EventListeners
             this.plugin = plugin;
         }
 
-        [ListenerMethod(ListenerType.PacketEvent)]
+        [ListenerMethod(ListenerType.PacketRecieved)]
         public void DoublePVPDamage(Event ev, INitroxConnection connection, NitroxModel.Packets.PvPAttack packet)
         {
             packet.Damage *= 2;
         }
 
-        [ListenerMethod(ListenerType.PacketEvent)]
+        [ListenerMethod(ListenerType.PacketRecieved)]
         public void ChatMessageEvent(Event ev, INitroxConnection connection, NitroxModel.Packets.ChatMessage packet)
         {
             plugin.GetLogger().Info($"Example Event Log: {packet.Text}");
