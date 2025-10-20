@@ -1,8 +1,8 @@
-﻿using Nitrox_PublixExtension.Core.Events;
+﻿using Nitrox.Model.Subnautica.Packets;
+using Nitrox.Server.Subnautica.Models.Communication;
+using Nitrox_PublixExtension.Core.Events;
 using Nitrox_PublixExtension.Core.Events.Attributes;
 using Nitrox_PublixExtension.Core.Events.Base;
-using NitroxModel.Logger;
-using NitroxServer.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +20,13 @@ namespace Publix_ExamplePlugin.EventListeners
         }
 
         [ListenerMethod(ListenerType.PacketRecieved)]
-        public void DoublePVPDamage(Event ev, INitroxConnection connection, NitroxModel.Packets.PvPAttack packet)
+        public void DoublePVPDamage(Event ev, INitroxConnection connection, PvPAttack packet)
         {
             packet.Damage *= 2;
         }
 
         [ListenerMethod(ListenerType.PacketRecieved)]
-        public void ChatMessageEvent(Event ev, INitroxConnection connection, NitroxModel.Packets.ChatMessage packet)
+        public void ChatMessageEvent(Event ev, INitroxConnection connection, ChatMessage packet)
         {
             plugin.GetLogger().Info($"Example Event Log: {packet.Text}");
         }

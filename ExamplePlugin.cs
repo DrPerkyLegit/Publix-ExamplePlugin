@@ -1,7 +1,6 @@
 ﻿using Nitrox_PublixExtension.Core;
 using Nitrox_PublixExtension.Core.Plugin;
 using Nitrox_PublixExtension.Core.Plugin.Attributes;
-using NitroxModel.Logger;
 using Publix_ExamplePlugin.EventListeners;
 
 namespace Publix_ExamplePlugin
