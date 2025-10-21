@@ -1,6 +1,6 @@
-﻿using Nitrox.Model.DataStructures.GameLogic;
-using Nitrox.Model.Logger;
-using Nitrox.Server.Subnautica.Models.Commands.Abstract;
+﻿using NitroxModel.DataStructures.GameLogic;
+using NitroxModel.Logger;
+using NitroxServer.ConsoleCommands.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
